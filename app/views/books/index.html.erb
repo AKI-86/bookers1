@@ -1,7 +1,14 @@
 <h1>Books</h1>
 
+<p>Title</p><p>Body</p>
+<% @books.each do |book| %>
+  <span><%= book.title %></span>
+  <span><%= book.body %></span>
+  <a href ="/show">Show</a>
+  <a href ="/edit">Edit</a>
+  <a href ="/あとで">Destroy</a><br>
 
-
+<% end %>
 
 <h2>New book</h2>
 <%= form_with model: @book do |f| %>

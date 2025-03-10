@@ -4,6 +4,8 @@ class BooksController < ApplicationController
   end
 
   def index
+    @books = Book.select(:title, :body).limit(9).order(created_at: :desc)
+    # 一覧表示はIDの若い順に表示するとあるが、
   end
 
   def show
