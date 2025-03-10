@@ -2,14 +2,13 @@
 
 <p>Title</p><p>Body</p>
 <% @books.each do |book| %>
-  <span><%= book.title %></span>
-  <span><%= book.body %></span>
   <span>
-    <%= link_to "Show", "/books/#{book.id}" %>
-    <a href ="/edit">Edit</a>
-    <a href ="/あとで">Destroy</a><br>
+  <%= book.title %>
+  <%= book.body %>
+  <%= link_to "Show", book_path(book.id) %>
+  <%= link_to "Edit", edit_book_path(book.id) %>
+  <a href ="/あとで">Destroy</a><br>
   </span>
-
 <% end %>
 
 <h2>New book</h2>
