@@ -4,9 +4,11 @@
 <% @books.each do |book| %>
   <span><%= book.title %></span>
   <span><%= book.body %></span>
-  <a href ="/show">Show</a>
-  <a href ="/edit">Edit</a>
-  <a href ="/あとで">Destroy</a><br>
+  <span>
+    <%= link_to "Show", "/books/#{book.id}" %>
+    <a href ="/edit">Edit</a>
+    <a href ="/あとで">Destroy</a><br>
+  </span>
 
 <% end %>
 
