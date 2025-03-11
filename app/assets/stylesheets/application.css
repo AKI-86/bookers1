@@ -14,37 +14,3 @@
  *= require_self
  */
 
-
-body {
-  color: #242424;
-  font-fargb(0, 0, 0): verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 33px;
-}
-
-td {
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.flash-notice {
-  color: green;
-}
-
-show_body {
-  color: #242424;
-  line-height: 20px;
-  margin: 33px;
-}
-
-top_body {
-  color: #242424;
-  line-height: 30px;
-}
-
-top_body2{
-  color: #242424;
-  text-indent: 2em;
-}
