@@ -3,7 +3,9 @@
 <p>Title: <%= @book.title %></p>
 
 <p>Body:<%= @book.body %></p>
-<a>Edit(後でeditに変更する)</a>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+
 <a href ="/books">Back</a>
 
 <%# 消していい？ <p>Find me in app/views/books/show.html.erb</p> %%>
