@@ -1,13 +1,13 @@
 <div>
-  <%= flash[:notice] %>
+  <%= content_tag :div, flash[:notice], class: "flash-notice" %>
 </div>
 
-<p>title: <%= @book.title %></p>
+<show_body>
+  <p><b>title:</b> <%= @book.title %></p>
+  <p><b>Body:</b><%= @book.body %></p>
 
-<p>Body:<%= @book.body %></p>
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  |
+  <a href ="/books">Back</a>
+</show_body>
 
-<%= link_to "Edit", edit_book_path(@book.id) %>
-
-<a href ="/books">Back</a>
-
-<%# 消していい？ <p>Find me in app/views/books/show.html.erb</p> %%>

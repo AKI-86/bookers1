@@ -1,7 +1,6 @@
 <div>
-  <%= flash[:notice] %>
+  <%= content_tag :div, flash[:notice], class: "flash-notice" %>
 </div>
-
 
 <h1>Editing Book</h1>
 
@@ -25,5 +24,6 @@
   <%= f.submit 'Update Book' %></br>
   
   <%= link_to "Show", book_path(@book.id) %>
+  |
   <a href ="/books">Back</a>
 <% end %>
