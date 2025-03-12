@@ -2,12 +2,12 @@
   <%= content_tag :div, flash[:notice], class: "flash-notice" %>
 </div>
 
-<show_body>
+<div class='show_body'>
   <p><b>title:</b> <%= @book.title %></p>
   <p><b>Body:</b><%= @book.body %></p>
 
   <%= link_to "Edit", edit_book_path(@book.id) %>
   |
   <a href ="/books">Back</a>
-</show_body>
+</div>
 
